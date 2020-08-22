@@ -39,13 +39,13 @@ class Rectangle extends Shape
 		//
 		var shapeOffset = 40;
 
-        var width = this.vertices[2] - this.vertices[0];
-        var height = this.vertices[7] - this.vertices[0];
+		var width = this.vertices[2] - this.vertices[0];
+		var height = this.vertices[7] - this.vertices[0];
 
-        // explicitly draw the rectangle
-        //
+		// explicitly draw the rectangle
+		//
 		this.ctx.beginPath();
-        this.ctx.rect(x + this.vertices[0], y + shapeOffset + this.vertices[1], width, height);
+		this.ctx.rect(x + this.vertices[0], y + shapeOffset + this.vertices[1], width, height);
 		this.ctx.strokeStyle = '#ff0000';
 		this.ctx.stroke();
 
